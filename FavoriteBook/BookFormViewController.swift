@@ -1,4 +1,4 @@
-
+/*
 import UIKit
 
 class BookFormViewController: UIViewController {
@@ -27,6 +27,7 @@ class BookFormViewController: UIViewController {
         authorTextField.text = book.author
         genreTextField.text = book.genre
         lengthTextField.text = book.length
+        print("se actualizo la informacion")
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
@@ -37,6 +38,8 @@ class BookFormViewController: UIViewController {
         
         book = Book(title: title, author: author, genre: genre, length: length)
         performSegue(withIdentifier: PropertyKeys.unwind, sender: self)
+        print("se guardo la informacion")
     }
     
 }
+*/
