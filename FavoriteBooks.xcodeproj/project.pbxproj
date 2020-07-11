@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10A9D71924B90317006D4EF9 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A9D71824B90317006D4EF9 /* BookTableViewCell.swift */; };
 		10AF623A24B81AB500557DE4 /* BookFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AF623924B81AB500557DE4 /* BookFormTableViewController.swift */; };
 		2C5E3E1A1E514CC400C02C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E3E191E514CC400C02C5F /* AppDelegate.swift */; };
 		2C5E3E1F1E514CC400C02C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5E3E1D1E514CC400C02C5F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10A9D71824B90317006D4EF9 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		10AF623924B81AB500557DE4 /* BookFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFormTableViewController.swift; sourceTree = "<group>"; };
 		2C5E3E161E514CC400C02C5F /* FavoriteBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5E3E191E514CC400C02C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2C5E3E201E514CC400C02C5F /* Assets.xcassets */,
 				2C5E3E221E514CC400C02C5F /* LaunchScreen.storyboard */,
 				2C5E3E251E514CC400C02C5F /* Info.plist */,
+				10A9D71824B90317006D4EF9 /* BookTableViewCell.swift */,
 			);
 			path = FavoriteBook;
 			sourceTree = "<group>";
@@ -100,22 +103,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					2C5E3E151E514CC400C02C5F = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 2C5E3E111E514CC400C02C5F /* Build configuration list for PBXProject "FavoriteBooks" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -151,6 +153,7 @@
 				2C5E3E1A1E514CC400C02C5F /* AppDelegate.swift in Sources */,
 				10AF623A24B81AB500557DE4 /* BookFormTableViewController.swift in Sources */,
 				2C5E3E301E514D3400C02C5F /* BookFormViewController.swift in Sources */,
+				10A9D71924B90317006D4EF9 /* BookTableViewCell.swift in Sources */,
 				2C5E3E2C1E514CE500C02C5F /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -240,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -297,7 +302,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -311,7 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.armandocarrillo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

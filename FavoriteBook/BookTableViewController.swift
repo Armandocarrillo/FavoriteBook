@@ -35,12 +35,12 @@ class BookTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.bookCell, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.bookCell, for: indexPath) as! BookTableViewCell //Force-cast the cell
         
         let book = books[indexPath.row]
-        cell.textLabel?.text = book.title
-        cell.detailTextLabel?.text = book.description
-        
+        //cell.textLabel?.text = book.title
+        //cell.detailTextLabel?.text = book.description
+        cell.update(with: book)
         return cell
     }
     //Delete books

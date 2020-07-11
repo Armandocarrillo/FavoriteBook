@@ -19,8 +19,10 @@ class BookFormTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     updateView()
+        
     }
 
     @IBAction func saveButton(_ sender: UIButton) {
